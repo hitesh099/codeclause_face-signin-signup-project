@@ -10,7 +10,7 @@ app.secret_key = config('FLASK_SECRET')
 
 
 #database
-mongo_uri = config('MONGO_URI')  # mongodb uri
+mongoURI = config('MONGO_URI')  # mongodb uri
 client = MongoClient(mongoURI) # type: ignore
 database = client.get_database('flask_user_data1')
 db = database.flask_user_login_data
